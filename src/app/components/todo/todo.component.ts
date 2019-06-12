@@ -18,7 +18,7 @@ export class TodoComponent implements OnInit {
   constructor(private modalService: NgbModal) { }
 
   ngOnInit() {
-
+    // this.open(TodoComponent);
   }
 
   open(content) {
