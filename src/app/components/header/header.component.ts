@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-
+  title : string;
   constructor() { }
 
   ngOnInit() {
+    console.log("Hello");
+    // Call a service that gets the data
+    this.title = "TodoApp";
   }
 
 }
