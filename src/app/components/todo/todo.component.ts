@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Todo } from '../../classes/todo';
 import { NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap'; 
 
+import { FormGroup, FormControl } from '@angular/forms';
 
 
 @Component({
