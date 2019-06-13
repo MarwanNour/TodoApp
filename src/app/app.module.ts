@@ -8,6 +8,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { TodoInputComponent } from './components/todo-input/todo-input.component';
 
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { TodoListComponent } from './components/todo-list/todo-list.component';
+import { TodoListStorageService } from './services/todo-list-storage.service';
 
 
 @NgModule({
@@ -15,7 +17,8 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
     AppComponent,
     TodoComponent,
     HeaderComponent,
-    TodoInputComponent
+    TodoInputComponent,
+    TodoListComponent
   ],
   entryComponents:[
     // add custom modals here
@@ -26,7 +29,7 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
     NgbModule
   ],
   // add services in providers
-  providers: [],
+  providers: [TodoListStorageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
